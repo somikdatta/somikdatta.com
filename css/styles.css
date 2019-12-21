@@ -21,21 +21,20 @@ body {
   position: relative;
   height: 126%;
   width: 100%;
-  background: url("/assets/background2.png"),
-    url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%221440%22%20height=%22661.1%22%20viewBox=%220%200%201440%20661.1%22%3E%3Cstyle%20type=%22text/css%22%3Ecircle,%20ellipse,%20line,%20path,%20polygon,%20polyline,%20rect,%20text%20%7B%20fill:%20rgb(92,%20106,%20196)%20!important;%20%7D%3C/style%3E%3Cpath%20fill=%22rgb(92,%20106,%20196)%22%20d=%22M1440%20488c-19.3%204.3-39.2%208.6-60%2013-174.2%2036.5-228.8%20288-467%2076.2-153.6-136.6-424-22.8-660.4-5.8-130.2%209.3-252.6-75-252.6-75V0h1440%22/%3E%3C/svg%3E");
-  background-repeat: no-repeat no-repeat;
-  background-position: bottom center, top center;
-  background-size: 40rem, cover;
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%221440%22%20height=%22661.1%22%20viewBox=%220%200%201440%20661.1%22%3E%3Cstyle%20type=%22text/css%22%3Ecircle,%20ellipse,%20line,%20path,%20polygon,%20polyline,%20rect,%20text%20%7B%20fill:%20rgb(92,%20106,%20196)%20!important;%20%7D%3C/style%3E%3Cpath%20fill=%22rgb(92,%20106,%20196)%22%20d=%22M1440%20488c-19.3%204.3-39.2%208.6-60%2013-174.2%2036.5-228.8%20288-467%2076.2-153.6-136.6-424-22.8-660.4-5.8-130.2%209.3-252.6-75-252.6-75V0h1440%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 #content {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  width: 100%;
+  width: 66.667%;
 }
 
 #name {
@@ -51,6 +50,14 @@ body {
 
 #resumeButton {
   margin: 1rem 0 0 0;
+}
+
+#image-container {
+  margin: auto 10%;
+}
+#image-container > img {
+  width: 100%;
+  height: auto;
 }
 
 /* Buttons */
@@ -150,6 +157,17 @@ body {
 }
 
 /* Responsive */
+@media screen and (max-width: 950px) {
+  #content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  #content {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 420px) {
   #name {
