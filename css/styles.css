@@ -28,13 +28,13 @@ body {
 }
 
 #content {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   width: 66.667%;
+  margin: 0 auto;
+}
+#content-container {
+  margin: 10rem auto 0 auto;
 }
 
 #name {
@@ -93,8 +93,8 @@ body {
 }
 
 .social:hover {
-  transform: scale(1.1);
-  transform: translateY(-5%);
+  transform: scale(1.2);
+  transform: translateY(-7%);
 }
 
 /* Bouncing arrow */
