@@ -1,9 +1,14 @@
-language: node_js
-node_js:
-  - "10.16.0"
-script:
-  - echo "Deploying!"
-install:
-  - npm install -g firebase tools
-after_success:
-  - firebase deploy --project $PROJECT_ID --token $FIREBASE_TOKEN
+# language: node_js
+# node_js:
+#   - "10.16.0"
+# script:
+#   - echo "Deploying!"
+# install:
+#   - npm install -g firebase tools
+# after_success:
+#   - firebase deploy --project $PROJECT_ID --token $FIREBASE_TOKEN
+deploy:
+  provider: firebase
+  token:
+    secure: "1//0gDgNDmkDhmiSCgYIARAAGBASNwF-L9IrJeOSx46Z4gw1AXXBjltqVHgS5tsiBTL9zm_xBiMDrVMO6PGaL__5jwz0GqhNQBxd0_Y"
+  project: "portfolio-a48ff"
