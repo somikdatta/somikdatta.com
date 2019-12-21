@@ -80,6 +80,12 @@ body {
     text-decoration: none;
     font-size: 1.5rem;
     margin: 0 0.5rem;
+    transition: transform 0.2s ease-in;
+}
+
+.social:hover {
+    transform: scale(1.1);
+    transform: translateY(-5%);
 }
 
 /* Bouncing arrow */
@@ -91,7 +97,7 @@ body {
 
 .arrow {
     text-align: center;
-    margin: 5% auto;
+    margin: 3rem auto;
 }
 
 .bounce {
@@ -141,4 +147,17 @@ body {
         -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 420px) {
+    #name {
+        font-size: 3rem;
+    }
+
+    #description {
+        font-size: 1rem;
+    }
+
 }
