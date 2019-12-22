@@ -50,7 +50,29 @@ body {
   height: auto;
 }
 
+#footer {
+  background-color: rgb(33, 43, 53);
+  color: azure;
+  padding: 2rem 3rem;
+}
+
+#links>a {
+  color: inherit;
+  margin: 1rem 3rem;
+}
+
+#footer-socialContainer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 /* General Classes */
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 .centering {
   margin: 0 auto;
