@@ -44,7 +44,8 @@ body {
 #image-container {
   margin: auto 10%;
 }
-#image-container > img {
+
+#image-container>img {
   width: 100%;
   height: auto;
 }
@@ -60,9 +61,15 @@ body {
   margin: 0 auto;
 }
 
-.three-column-grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0 2rem;
+}
+
+.grid-narrow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
   gap: 0 2rem;
 }
 
@@ -145,6 +152,7 @@ body {
 }
 
 @-webkit-keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -166,6 +174,7 @@ body {
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -197,6 +206,7 @@ body {
   .two-third-width {
     width: 100%;
   }
+
   .centering {
     margin-left: 10%;
     margin-right: 10%;
