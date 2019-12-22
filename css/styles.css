@@ -63,7 +63,7 @@ body {
 .three-column-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  gap: 2rem 2rem;
+  gap: 1rem 2rem;
 }
 
 /* Text */
