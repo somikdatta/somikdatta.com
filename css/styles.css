@@ -6,15 +6,7 @@ body {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
-}
-
-.flex-row {
-  display: flex;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
+  scroll-behavior: smooth;
 }
 
 #landing {
@@ -30,11 +22,8 @@ body {
 #content {
   text-align: center;
   color: #fff;
-  width: 66.667%;
   margin: 0 auto;
-}
-#content-container {
-  margin: 4rem auto 0 auto;
+  padding-top: 4rem;
 }
 
 #name {
@@ -58,6 +47,47 @@ body {
 #image-container > img {
   width: 100%;
   height: auto;
+}
+
+/* General Classes */
+
+.centering {
+  margin: 0 auto;
+}
+
+.two-third-width {
+  width: 66.667%;
+  margin: 0 auto;
+}
+
+.three-column-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 2rem 2rem;
+}
+
+/* Text */
+
+.headingText {
+  color: #5c6ac4;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+
+.primaryText {
+  color: #212b35;
+  line-height: 1.5;
+}
+
+.primaryText-bold {
+  color: #212b35;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.secondaryText {
+  color: #637381;
+  line-height: 1.25;
 }
 
 /* Buttons */
@@ -158,14 +188,18 @@ body {
 
 /* Responsive */
 @media screen and (max-width: 950px) {
-  #content {
+  .two-third-width {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 625px) {
-  #content {
+  .two-third-width {
     width: 100%;
+  }
+  .centering {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
