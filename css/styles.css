@@ -145,6 +145,7 @@ body {
 }
 
 .social {
+  will-change: scale, translateY;
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
@@ -167,6 +168,7 @@ body {
 .arrow {
   text-align: center;
   margin: 3rem auto;
+  will-change: animation;
 }
 
 .bounce {
