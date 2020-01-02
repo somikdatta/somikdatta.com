@@ -45,18 +45,19 @@ body {
   margin: auto 10%;
 }
 
-#image-container>img {
+#image-container > img {
   width: 100%;
   height: auto;
 }
 
 #footer {
   background-color: rgb(33, 43, 53);
+  /* background-color: #001a23; */
   color: azure;
   padding: 2rem 3rem;
 }
 
-#links>a {
+#links > a {
   color: inherit;
   margin: 1rem 3rem;
 }
@@ -177,7 +178,6 @@ body {
 }
 
 @-webkit-keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -199,7 +199,6 @@ body {
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
