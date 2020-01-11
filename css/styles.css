@@ -45,7 +45,7 @@ body {
   margin: auto 10%;
 }
 
-#image-container > img {
+#image-container>img {
   width: 100%;
   height: auto;
 }
@@ -57,7 +57,7 @@ body {
   padding: 2rem 3rem;
 }
 
-#links > a {
+#links>a {
   color: inherit;
   margin: 1rem 3rem;
 }
@@ -123,6 +123,7 @@ body {
 
 /* Buttons */
 .primaryButton {
+  font-family: "Montserrat";
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   background-color: #212b35;
   color: #ffffff;
@@ -178,6 +179,7 @@ body {
 }
 
 @-webkit-keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -199,6 +201,7 @@ body {
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
